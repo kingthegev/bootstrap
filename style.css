@@ -1,0 +1,44 @@
+p{
+    margin: 0 !important;
+}
+
+
+.cardItem{
+    border: 0.5px solid rgb(192, 192, 192);
+    width: 352px;
+    padding-right: 0;
+    padding-left:0;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 3px 4px 15px 10px rgb(192, 192, 192);
+    max-width: 352px;
+    width: auto;
+}
+.cardItem > p:first-of-type{
+    font-weight: 600;
+    color: gray;
+    margin-top:15px ;
+}
+.cardItem p{
+    color: gray;
+}
+.line{
+    border-top: 0.3px solid rgb(192, 192, 192);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-block: 8px;
+}
+.cardContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+img{
+    max-width: 352px;
+    width: auto;
+}
+.mainContainer{
+    margin-top: 25px;
+}
