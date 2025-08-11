@@ -56,19 +56,27 @@
             <div class="collapse navbar-collapse" id="navbarSupportContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">About Me</a>
+                        <a class="nav-link active" href="#aboutMe">About Me</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Portfolio</a>
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./travel.html">Travel</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Courses.html">Courses</a>
                     </li>
 
                 </ul>
             </div>
         </div>
     </nav>
+    <nav class="card-header bg-primary text-white"></nav>
 
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
@@ -105,7 +113,7 @@
         </button>
     </div>
 
-    <section class="container-fluid mt-5">
+    <section class="container-fluid mt-5" id="aboutMe">
         <div class="card">
             <div class="row">
                 <div class="col-md-2">
@@ -123,7 +131,7 @@
         </div>
     </section>
 
-    <section class="container-fluid">
+    <section class="container-fluid" id="portfolio">
         <h2 class="mt-5 mb-5">My Projects</h2>
         <div class="row d-flex justify-content-between">
             <div class="card col-lg-3">
@@ -153,7 +161,7 @@
             </div>
         </div>
     </section>
-    <section class="container-fluid my-5">
+    <section class="container-fluid my-5" id="contact">
         <h2>Contact Me</h2>
         <form>
 
@@ -186,9 +194,10 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5>Send Message</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body">
-                     <label for="floatingTextarea">Username</label>
+                    <label class="mb-1" for="floatingTextarea">Username</label>
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="basic-addon1">@</span>
@@ -196,7 +205,7 @@
                         <input type="text" class="form-control" placeholder="Username" aria-label="Username"
                             aria-describedby="basic-addon1">
                     </div>
-                     <label for="floatingTextarea">Search</label>
+                    <label class="mb-1" for="floatingTextarea">Search</label>
                     <div class="input-group mb-3">
                         <input type="text" class="form-control" placeholder="Search..." aria-label="Search"
                             aria-describedby="basic-addon2">
@@ -204,17 +213,18 @@
                             <span class="input-group-text" id="basic-addon2">Go</span>
                         </div>
                     </div>
-                    <label for="floatingTextarea">Amount</label>
+                    <label class="mb-1" for="floatingTextarea">Amount</label>
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
                             <span class="input-group-text">$</span>
                         </div>
-                        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)" placeholder="Amount">
+                        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)"
+                            placeholder="Amount">
                         <div class="input-group-append">
                             <span class="input-group-text">.00</span>
                         </div>
                     </div>
-                        <button type="button" class="btn btn-success btn-lg btn-block w-100">submit</button>
+                    <button type="button" class="btn btn-success btn-lg btn-block w-100">submit</button>
                 </div>
                 <div class="modal-footer">
                     <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
